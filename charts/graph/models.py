@@ -11,7 +11,7 @@ class ArticleData(models.Model):
 
 class ClinicalData(models.Model):
     country = models.CharField(max_length=220)
-    num = models.IntegerField()
+    num = models.FloatField()
 
     def __str__(self):
         return "{}-{}".format(self.country, self.num)

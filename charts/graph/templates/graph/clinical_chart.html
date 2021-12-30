@@ -14,7 +14,7 @@ const myChart = new Chart(ctx, {
             label: '# of Articles',
             data: [{% for item in qs%}{{item.num}},{% endfor %}],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
+                'rgba(226, 23, 23, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
                 'rgba(255, 206, 86, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
@@ -57,5 +57,8 @@ const myChart = new Chart(ctx, {
 {% endblock scripts %}
 
 {% block content %}
+    <div class="container">
+        <h1>Location of Clinical Trial Facilities</h1>
+    </div>
     <canvas id="myChart" width="400" height="180"></canvas>
 {% endblock content %}

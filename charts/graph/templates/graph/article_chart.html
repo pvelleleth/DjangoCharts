@@ -47,6 +47,7 @@ const myChart = new Chart(ctx, {
     options: {
         scales: {
             y: {
+    
                 beginAtZero: true
             }
         }
@@ -57,6 +58,9 @@ const myChart = new Chart(ctx, {
 {% endblock scripts %}
 
 {% block content %}
+<div class="container">
+    <h1>Release Date of the References from the Article</h1>
+</div>
     <canvas id="myChart" width="400" height="180"></canvas>
 {% endblock content %}
 
